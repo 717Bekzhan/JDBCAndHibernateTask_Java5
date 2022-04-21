@@ -61,7 +61,7 @@ public class UserServiceTest {
     }
 
     @Test
-    public void dropUsersTable() {
+    public void dropUsersTable()throws SQLException {
 
         underTest.dropUsersTable();
 
@@ -69,7 +69,7 @@ public class UserServiceTest {
     }
 
     @Test
-    public void createUsersTable() {
+    public void createUsersTable() throws SQLException {
         // given
         execute(DROP_TABLE_IF_EXIST_QUERY);
 
